@@ -11,13 +11,10 @@ def enter_night_club(individual):
     if older_than_18_year_old(individual.age):
         print("Allowed to enter.")
     else:
-        print("Enterance of minors is denited.")
+        print("Entrance of minors is denied.")
 
 def older_than_18_year_old(age):
-    if age > LEGAL_DRINKING_AGE:
-        return True
-    else: 
-        return False
+    return age > LEGAL_DRINKING_AGE
     
     
 person = Person(17.9)
