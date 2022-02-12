@@ -1,6 +1,6 @@
 # Adapted from a Java code in the "Refactoring" book by Martin Fowler.
 
-# TODO: Replace temporary variable with extracted method/query
+# DONE: Replace temporary variable with extracted method/query
 
 # Code snippet. Not runnable.
 def get_price():
