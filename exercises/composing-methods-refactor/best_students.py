@@ -40,7 +40,8 @@ class School:
         print('****************************')
     def contact_top_employers(self):
         # Find the top 10% of them and send their contact to the top employers
-        sorted_students = self.find_graduates.sort(key=lambda s: s.get_gpa())
+        sorted_students = self.find_graduates()
+        sorted_students.sort(key=lambda s: s.get_gpa())
         percentile = 0.9
         index = int(percentile * len(sorted_students))
         top_10_percent = sorted_students[index:]
@@ -52,3 +53,4 @@ students = [Student(2.1, 'donald'), Student(2.3, 'william'), Student(2.7, 'toro'
             Student(3.9, 'lili'), Student(3.2,'kami'), Student(3,'sarah')]
 school  = School(students)
 school.process_graduation()
+school.contact_top_employers()
