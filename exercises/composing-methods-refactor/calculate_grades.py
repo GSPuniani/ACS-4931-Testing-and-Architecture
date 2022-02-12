@@ -3,10 +3,10 @@
 import math
 
 def calculate_mean(grades):
-    sum = 0
+    total = 0
     for grade in grades:
-        sum += grade
-    return 1.0 * sum / len(grades)
+        total += grade
+    return 1.0 * total / len(grades)
 
 def calculate_std(grades, mean):
     sum_of_sqrs = 0
@@ -29,7 +29,7 @@ def print_stat():
     # print out the mean and standard deviation in a nice format.
     print('****** Grade Statistics ******')
     print("The grades's mean is:", mean)
-    print('The population standard deviation of grades is: ', round(sd, 3))
+    print('The population standard deviation of grades is: ', round(std, 3))
     print('****** END ******')
 
 print_stat()

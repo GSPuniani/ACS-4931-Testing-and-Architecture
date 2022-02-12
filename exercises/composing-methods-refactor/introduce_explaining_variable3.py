@@ -5,9 +5,9 @@ MEDIUM = 600000
 COOKED_CONSTANT = 0.05
 
 def is_cooked(time, temperature, pressure, desired_state):
-    cooking_factor = time * temperature * pressure * COOKED_CONSTANT
-    if desired_state == 'well-done' and cooking_factor >= WELL_DONE: 
+    cooking_criterion = time * temperature * pressure * COOKED_CONSTANT
+    if desired_state == 'well-done' and cooking_criterion >= WELL_DONE: 
         return True
-    if desired_state == 'medium' and cooking_factor >= MEDIUM:
+    if desired_state == 'medium' and cooking_criterion >= MEDIUM:
         return True
     return False
