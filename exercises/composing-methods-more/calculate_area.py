@@ -21,8 +21,8 @@ li = [5, -1, 43, 32, 87, -100]
 print(get_max_value(li))
 
 ############################
-def split_into_list(sentence):  # TODO: Rename this function to reflect what it's doing.
-    words = sentence[0:].split(' ')
+def split_sentence_into_list(sentence):  # DONE: Rename this function to reflect what it's doing.
+    words = sentence[:].split(' ')
     return words
 
-print(split_into_list('If you were a vegetable, you’d be a ‘cute-cumber.'))
+print(split_sentence_into_list('If you were a vegetable, you’d be a ‘cute-cumber.'))
