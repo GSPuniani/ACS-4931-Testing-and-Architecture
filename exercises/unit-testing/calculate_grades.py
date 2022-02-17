@@ -28,7 +28,7 @@ def calculate_stat(grade_list):
     sum_of_sqrs = 0
     for grade in grade_list:
         sum_of_sqrs += (grade - mean) ** 2
-    sd = math.sqrt(sum_of_sqrs / len(grade_list)) # standard deviation
+    sd = math.sqrt(sum_of_sqrs / (len(grade_list) - 1)) # standard deviation
     return mean, sd
 
 def print_stat(mean, sd):
