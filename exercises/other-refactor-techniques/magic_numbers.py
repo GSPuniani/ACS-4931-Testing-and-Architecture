@@ -1,9 +1,9 @@
 # by Kami Bigdely 
 # Replace magic numbers with named constanst
-COULOMB_CONSTANT = 8.9875517923*1e9
 
 # First Section
 # Given two point charges, calcualte the electric force exerted on them.
+COULOMB_CONSTANT = 8.9875517923*1e9
 q1 = int(input('Enter a value of charge q1: '))
 q2 = int(input('Enter a value of charge q2: '))
 distance = int(input("Enter the distance between two charges: "))

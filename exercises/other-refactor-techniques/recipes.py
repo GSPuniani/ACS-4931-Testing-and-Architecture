@@ -21,7 +21,7 @@ foods = [Food('butternut squash soup', 45, True, 'soup', 'North African',\
                '. Add coconut milk. Simmer for 5 mintues.'),
 
         Food('shirazi salad', 5, True, 'salad', 'Iranian', ['cucumber', 'tomato', 'onion', 'lemon juice'], \
-            '1. dice cucumbers, tomatoes and onions 2. put all into a bowl 3. pour lemon juice 3. add salt'
+            '1. dice cucumbers, tomatoes and onions 2. put all into a bowl 3. pour lemon juice 3. add salt '
                 '4. Mixed them thoroughly'),
 
         Food('Home-made Beef Sausage', 60, False, 'deli', 'All', ['sausage casing', 'regular ground beef','garlic',\
@@ -37,8 +37,6 @@ for food in foods:
     print("Is Veggie?", 'Yes' if food.is_veggie else "No")
     print("Food Type:", food.food_type)
     print("Cuisine:", food.cuisine)
-    # for item in value[4]:
-    #     print(item, end=', ')
     print("Ingredients:", food.ingredients)
     print("Recipe:", food.recipe)
     print("***")

@@ -37,13 +37,13 @@ class Rectangle(Shape):
             print('Drew the rectangle.')
         
     def get_center(self):
-        return self.x + self.width/2, \
-               self.y + self.height/2 
+        return self.x + self.width / 2, \
+               self.y + self.height / 2 
 
 
 
 if __name__ == "__main__":
-    circle = Circle(0,0,10, False)
+    circle = Circle(0, 0, 10, False)
     circle.set_visibility(True)
     circle.display()
     print('center point', circle.get_center())
